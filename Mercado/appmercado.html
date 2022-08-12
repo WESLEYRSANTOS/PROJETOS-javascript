@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            /* edita aba APP supercado */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            /* edita caixas de preenchimento */
+            header{
+                background-color: #5a71bb;
+                text-align: center;
+                color: white;
+                padding: 20px 0;
+            }
+            /* personaliza div */
+            .lista-cadastro{
+                display: flex;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+            /* edita caixas com input */
+            .lista-cadastro input[type=text]{
+                flex: 1;
+                height: 40px;
+                padding-left: 20px;
+            }
+            /* edita parte dos produtos*/
+            .lista-produtos-single{
+                padding: 10px 0;
+                margin: 20px 0;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+            }
+            /* edita parte dos produtos*/
+            .lista-produtos-single h3{
+                flex: 1;
+                padding: 0 20 px;
+               
+            }
+            /* edita h3 price*/
+            h3.price-produto{
+               text-align: right;
+               font-size: 17px;
+            }
+            /* edita h3 price*/
+            h3.price-produto > span{
+               background-color: #5a71bb;
+               padding: 8px 10px;
+               border-radius: 20px;
+               color: white;
+            }
+             /* edita h3 price*/
+             .soma-produto{
+              margin: 20px;
+            }
+        
+            /* edita botao limpar*/
+             button{
+              margin-left: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>APP lista de Supermercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <!-- caixa nome do produto-->
+            <input type="text" placeholder="nome do produto..."
+            name="nome_produto" />
+            <!-- caixa valor do produto-->
+            <input type="number" name="price" step="0.01"
+            title="This should be a number wich up to 2 decimal" />
+            <!-- botao cadastrar-->
+            <input type="submit" name="acao" value="Cadastrar"/>
+        </div>
+
+        <div class="lista-produtos">
+
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: R$0</h1>
+        </div>
+
+        <button name="limpar">Limpar</button>
+        <script src="appmercado.js">
+
+        </script>
+    </body>
+</html>
